@@ -13,7 +13,6 @@ public class ResultActivity extends AppCompatActivity {
     Computer computer;
     Game game;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +24,19 @@ public class ResultActivity extends AppCompatActivity {
         Bundle extras = intent.getExtras();
 
         String result = extras.getString("playerchoice");
-
         resultText.setText(result);
+
+
 
     }
 
-    public String display() {
+//    public String computerMoves(){
+//        Computer computer = new Computer();
+//        computer += computer.getMove();
+//        return computer;
+//    }
+
+    public String winner() {
         String display = new String();
         display += game.compareMoves(Moves.ROCK, computer.getMove());
         return display;
