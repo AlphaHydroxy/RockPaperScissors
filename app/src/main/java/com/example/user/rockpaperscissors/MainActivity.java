@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import static behaviours.Moves.PAPER;
+import static behaviours.Moves.ROCK;
+import static behaviours.Moves.SCISSORS;
 import static com.example.user.rockpaperscissors.R.id.comprps;
 import static com.example.user.rockpaperscissors.R.id.resultBox;
 import static com.example.user.rockpaperscissors.R.id.rockbtn;
@@ -61,9 +65,17 @@ public class MainActivity extends AppCompatActivity {
         computerMove.setText(this.computer.getMove().toString().toLowerCase());
     }
 
-//    public void showResult(){
-//        TextView result = (TextView)findViewById(R.id.resultBox);
-//        result.setText(this.game.displayWinner().toString().toLowerCase());
-//    }
+//    public String showResult(){
+//        if(playerMove == computerMove){
+//            return "It's a draw!";
+//        } else if (computerMove == S){
+//
+//        }
+//
+
+    }
 
 }
+
+//        TextView result = (TextView)findViewById(R.id.resultBox);
+//        result.setText(this.game.displayWinner().toString().toLowerCase());
